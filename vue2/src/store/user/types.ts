@@ -4,7 +4,7 @@ export interface User {
 }
 
 export interface UserState {
-    user?: User;
+    username: string;
     error: boolean;
     lastLogin: Date;
 }

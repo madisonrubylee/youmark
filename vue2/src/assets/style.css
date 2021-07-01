@@ -1,0 +1,16 @@
+nav {
+    padding: 5px;
+    display: block;
+}
+nav ul{
+    list-style: none;
+    margin: 15px;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid;
+}
+nav li{
+    padding: 0px 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}

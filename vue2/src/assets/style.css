@@ -7,7 +7,12 @@ nav ul{
     margin: 15px;
     float: left;
     width: 100%;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #FFE8FF;
+    padding-left: 22px;
+    margin-block: 0px;
+    margin-inline: 0px;
+    /* width: 100%; */
+    /* border-bottom: 1px solid; */
 }
 nav li{
     padding: 0px 10px;

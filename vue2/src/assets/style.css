@@ -1,6 +1,7 @@
 nav {
     padding: 5px;
     display: block;
+    height: 50px;
 }
 nav ul{
     list-style: none;
@@ -15,6 +16,26 @@ nav ul{
     /* border-bottom: 1px solid; */
 }
 nav li{
+    padding: 0px 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.video_list {
+    margin-top: 10px;
+}
+.video_list ul{
+    list-style: none;
+    margin: 15px;
+    float: left;
+    width: 100%;
+    padding-left: 22px;
+    margin-block: 0px;
+    margin-inline: 0px;
+    /* width: 100%; */
+    /* border-bottom: 1px solid; */
+}
+.video_list li{
     padding: 0px 10px;
     display: inline-block;
     margin-bottom: 15px;

@@ -7,8 +7,8 @@
             <li>Bookmark</li>
         </ul>
     </nav>
-    <!-- <video-list
-      :videoList=""></video-list> -->
+    <video-list
+      :videoList="mainData"></video-list>
     </div>
 </template>
 er
@@ -17,6 +17,7 @@ er
 import { Component, Vue } from 'vue-property-decorator'
 import VideoList from './VideoList.vue'
 import { MainMutations } from '../store/main/mutations'
+import { Main } from '../store/main/types'
 
 @Component({
     components: {
@@ -29,7 +30,7 @@ export default class MainPage extends Vue {
         return (this as any).$store.getters.getMainData
     }
 
-    set mainData(value: Array<object>) {
+    set mainData(value: Main[]) {
         (this as any).$store.commit(MainMutations.SET_HOME_RECOMM, value);
     }   
 

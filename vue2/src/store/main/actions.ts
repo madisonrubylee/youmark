@@ -5,10 +5,10 @@ import { Main } from "./types";
 import { MainMutations } from './mutations';
 
 export const actions: ActionTree <Main[], RootState> = {
-    loadMainData ({ commit , dispatch }) {
+    loadMainData ({ commit }): Promise<Array<object>> {
         return homeData.list('').then(data => {
             commit(MainMutations.SET_HOME_RECOMM, data)
-           // return data;
+            return data;
         })
     }
 

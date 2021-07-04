@@ -8,7 +8,7 @@ import '@/assets/style.css'
 
 Vue.config.productionTip = false
 
-Vue.use(VueYouTubeEmbed)
+Vue.use(VueYouTubeEmbed, { global: true, componentId: "youtube-media" })
 
 new Vue({
   store,

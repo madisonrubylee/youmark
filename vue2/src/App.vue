@@ -27,7 +27,6 @@ export default class App extends Vue {
 
     mounted () {
       (this as any).$store.dispatch("loadAPIResult");
-
       // setTimeout( () => {
       //   this.userName = 'changed'
       // }, 3000)

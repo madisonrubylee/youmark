@@ -2,7 +2,11 @@
     <div class="video_list">
       <ul>
         <li v-for="(item, idx) in videoList" v-bind:key="idx" >
-          <youtube-media :vide-id="item.url"></youtube-media>
+          <youtube-media 
+            :vide-id="item.url"
+            :player-width="150"
+            :player-height="100"
+          />
         </li>
       </ul>
     </div>

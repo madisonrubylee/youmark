@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Vuex , { StoreOptions }from 'vuex';
 import { RootState } from './types';
 import { user } from '@/store/user';
+import { mainData } from '@/store/main'
 
 Vue.use(Vuex);
 
@@ -11,12 +12,11 @@ const store: StoreOptions<RootState> = {
     },
     modules: {
        user,
+       mainData
     },
     mutations: {
-
     },
     actions: {
-
     }
 };
 

@@ -1,15 +1,18 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <!-- <router-view></router-view> -->
+    <mainPage></mainPage>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import { UserMutations } from './store/user/mutations';
+import mainPage from './components/MainPage.vue'
 
 @Component({
   components: {
+    mainPage
   },
 })
 export default class App extends Vue {
@@ -24,10 +27,10 @@ export default class App extends Vue {
 
     mounted () {
       (this as any).$store.dispatch("loadAPIResult");
-      
-      setTimeout( () => {
-        this.userName = 'changed'
-      }, 3000)
+
+      // setTimeout( () => {
+      //   this.userName = 'changed'
+      // }, 3000)
     }
 }
   

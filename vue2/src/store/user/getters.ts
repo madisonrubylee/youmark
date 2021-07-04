@@ -9,6 +9,7 @@ export const getters: GetterTree<UserState, RootState> = {
     },
 
     getUserName (state): string {
+        console.log(state)
         return state.username;
     }
 }

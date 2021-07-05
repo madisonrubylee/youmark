@@ -4,4 +4,7 @@ export interface Main {
     code: string;
 }
 
-
+export interface MainBanner {
+    img: string;
+    url: string;
+}

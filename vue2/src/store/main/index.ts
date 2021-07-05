@@ -6,9 +6,14 @@ import { mutations } from '@/store/main/mutations'
 import { actions } from '@/store/main/actions'
 
 // const state: Main[] = (this as any).dispatch("loadMainData");
-const state: Main[] = []
+const state:any = { 
+    mainRecomm: [],
+    mainBanner: [],
+ }
 
-export const mainData: Module<Main[], RootState> = {
+// const state:Main[] =[]
+ 
+export const mainData: Module<any, RootState> = {
     state,
     getters,
     mutations,

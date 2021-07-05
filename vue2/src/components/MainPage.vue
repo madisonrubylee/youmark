@@ -7,8 +7,12 @@
             <li>Bookmark</li>
         </ul>
     </nav>
+    <banner 
+    :bannerList="mainData.mainBanner"
+    />
     <video-list
-      :videoList="mainData"></video-list>
+      v-if="mainData.mainRecomm.length > 0"
+      :videoList="mainData.mainRecomm"></video-list>
     </div>
 </template>
 er
@@ -17,11 +21,13 @@ er
 import { Component, Vue } from 'vue-property-decorator'
 import VideoList from './VideoList.vue'
 import { MainMutations } from '../store/main/mutations'
-import { Main } from '../store/main/types'
+// import { Main } from '../store/main/types'
+import Banner from './Banner.vue'
 
 @Component({
     components: {
-        VideoList
+        VideoList,
+        Banner
     },
 })
 export default class MainPage extends Vue {
@@ -30,13 +36,18 @@ export default class MainPage extends Vue {
         return (this as any).$store.getters.getMainData
     }
 
-    set mainData(value: Main[]) {
+    set mainData(value: any) {
         (this as any).$store.commit(MainMutations.SET_HOME_RECOMM, value);
     }   
 
+    // get mainBanner() {
+    //     return (this as any).$store.getters.getMainBanner
+    // }
+
+
     mounted () {
-          (this as any).$store.dispatch("loadMainData")
-          
+          (this as any).$store.dispatch('loadMainData');
+          (this as any).$store.dispatch('loadBannerData');
     //    (this as any).$store.dispatch("loadMainData").then((data)=> {
     //        //this.mainData = data
     //        (this as any).$store.commit('SET_HOME_RECOMM', data)

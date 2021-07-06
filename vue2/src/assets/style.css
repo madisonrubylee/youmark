@@ -22,7 +22,7 @@ nav li{
 }
 
 .video_list {
-    margin-top: 10px;
+    margin-top: 100px;
 }
 .video_list ul{
     list-style: none;
@@ -39,4 +39,12 @@ nav li{
     padding: 0px 10px;
     display: inline-block;
     margin-bottom: 15px;
+}
+
+#banner {
+    height: 500px;
+}
+
+.swiper {
+    width: 100%;
 }

@@ -7,9 +7,11 @@
             <li>Bookmark</li>
         </ul>
     </nav>
-    <banner 
-    :bannerList="mainData.mainBanner"
-    />
+    <div class="banner">
+        <banner 
+        :bannerList="mainData.mainBanner"
+        />
+    </div>
     <video-list
       v-if="mainData.mainRecomm.length > 0"
       :videoList="mainData.mainRecomm"></video-list>

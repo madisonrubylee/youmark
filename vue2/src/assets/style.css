@@ -1,3 +1,19 @@
+html,
+body {
+    position: relative;
+    height:  100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+
 nav {
     padding: 5px;
     display: block;
@@ -23,6 +39,7 @@ nav li{
 
 .video_list {
     margin-top: 100px;
+    position: absolute;
 }
 .video_list ul{
     list-style: none;
@@ -40,11 +57,45 @@ nav li{
     display: inline-block;
     margin-bottom: 15px;
 }
-
-#banner {
+/* 
+.banner {
+    position: relative;
     height: 500px;
+} */
+
+/* .swiper {
+    width: 100%;
+} */
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
 }
 
-.swiper {
-    width: 100%;
-}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fafafa;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+/*   
+.bannerImg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} */

@@ -18,13 +18,13 @@ nav {
     padding: 5px;
     display: block;
     height: 50px;
+    border-bottom: 2px solid #a8c0f5;
 }
 nav ul{
     list-style: none;
     margin: 15px;
     float: left;
     width: 100%;
-    border-bottom: 1px solid #FFE8FF;
     padding-left: 22px;
     margin-block: 0px;
     margin-inline: 0px;
@@ -34,7 +34,8 @@ nav ul{
 nav li{
     padding: 0px 10px;
     display: inline-block;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    
 }
 
 .video_list {
@@ -93,8 +94,8 @@ nav li{
     align-items: center;
   }
 
-.bannerWrapper >>>.swiper-pagination-bullet-active  {
-    background :#ffffff
+.swiper-pagination-bullet-active  {
+    background :#a0d1ff
 }
 .bannerWrapper {
     width :100%

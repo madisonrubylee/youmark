@@ -6,11 +6,11 @@ import VueYouTubeEmbed from 'vue-youtube-embed'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 import '@/assets/style.css'
-import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper-bundle.css'
 
 Vue.config.productionTip = false
 
-Vue.use(VueYouTubeEmbed, { global: true, componentId: "youtube-media" })
+Vue.use(VueYouTubeEmbed, { global: true, componentId: "youtube" })
 Vue.use(VueAwesomeSwiper, /* { default options with global component } */)
 
 new Vue({

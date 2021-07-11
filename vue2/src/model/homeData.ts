@@ -39,6 +39,11 @@ const data:Main[] = [
         id: 4,
         code: 'RE',
         url: 'https://youtu.be/jqaR8A9tesk'
+    },
+    {
+        id: 5,
+        code: 'RE',
+        url: 'https://youtu.be/wdp1icyzXkw'
     }
 ]
 

@@ -1,5 +1,8 @@
 <template>
     <div class="video_list">
+      <h2 class="discoverTitle">
+        <a>이어보기</a>
+      </h2>
       <ul>
         <li v-for="(item, idx) in videoList" v-bind:key="idx" >
           <youtube 
@@ -24,7 +27,7 @@ import { getIdFromURL } from 'vue-youtube-embed'
 
 @Component({
   filters: {
-    url: (val) => getIdFromURL(val)
+    url: ((val: string) => getIdFromURL(val))
   }
 })
 export default class VideoList extends Vue {

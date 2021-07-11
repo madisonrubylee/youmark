@@ -63,13 +63,13 @@ nav li{
     height: 500px;
 } */
 
-/* .swiper {
-    width: 100%;
-} */
+.swiper {
+    height: 300px;
+    overflow: hidden;
+}
 
 .swiper-container {
     width: 100%;
-    height: 300px;
 }
 
 
@@ -93,6 +93,15 @@ nav li{
     align-items: center;
   }
 
+.bannerWrapper >>>.swiper-pagination-bullet-active  {
+    background :#ffffff
+}
+.bannerWrapper {
+    width :100%
+}
+.bannerWrapper img {
+    width:100%
+}
 /*   
 .bannerImg {
     background-size: contain;

@@ -6,7 +6,7 @@ import VueYouTubeEmbed from 'vue-youtube-embed'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 
 import '@/assets/style.css'
-import 'swiper/swiper-bundle.css'
+import 'swiper/swiper-bundle.min.css'
 
 Vue.config.productionTip = false
 

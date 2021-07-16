@@ -10,7 +10,7 @@ export enum MainMutations {
 export const mutations: MutationTree<any> = {
     [MainMutations.SET_HOME_RECOMM] (state, payload) {
         console.log(payload)
-        state.mainRecomm = payload
+        state.mainVideo = payload
         //state = [state, ...payload]
         // for(const i in payload) {
         //     Vue.set(state, i , payload[i]);

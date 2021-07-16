@@ -7,7 +7,7 @@ import { actions } from '@/store/main/actions'
 
 // const state: Main[] = (this as any).dispatch("loadMainData");
 const state:any = { 
-    mainRecomm: [],
+    mainVideo: [],
     mainBanner: [],
  }
 

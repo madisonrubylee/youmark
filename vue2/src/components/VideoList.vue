@@ -1,12 +1,12 @@
 <template>
     <div class="video_list">
       <h2 class="discoverTitle">
-        <a>이어보기</a>
+        <a class="rowTitle">{{videoList.codeDesc}}</a>
       </h2>
       <ul>
-        <li v-for="(item, idx) in videoList" v-bind:key="idx" >
+        <li v-for="(item, idx) in videoList.url" v-bind:key="idx" >
           <youtube 
-            :video-id="item.url | url" 
+            :video-id="item | url" 
             :player-width="300"
             :player-height="150"/>
           <!-- <youtube-iframe

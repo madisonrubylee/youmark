@@ -1,7 +1,8 @@
 export interface Main {
-    url: string;
+    url: string[];
     id: number;
     code: string;
+    codeDesc: string;
 }
 
 export interface MainBanner {

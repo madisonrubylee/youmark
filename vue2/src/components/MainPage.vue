@@ -1,20 +1,21 @@
 <template>
     <div>
-    <nav>
-        <ul class="menu">
-            <li>Home</li>
-            <li>Explore</li>
-            <li>Bookmark</li>
-        </ul>
-    </nav>
-    <div class="banner">
-        <banner 
-        :bannerList="mainData.mainBanner"
-        />
-    </div>
-    <video-list
-      v-if="mainData.mainRecomm.length > 0"
-      :videoList="mainData.mainRecomm"></video-list>
+        <nav>
+            <ul class="menu">
+                <li>Home</li>
+                <li>Explore</li>
+                <li>Bookmark</li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <banner 
+            :bannerList="mainData.mainBanner"
+            />
+        </div>
+          <video-list
+            v-for="(item, idx) in mainData.mainVideo"
+            :key="idx"
+            :videoList="item" />
     </div>
 </template>
 er

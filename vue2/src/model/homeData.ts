@@ -10,7 +10,7 @@ const banner:MainBanner[] = [
         url: 'https://youtu.be/3dTugvzECp8'
     },
     {
-        img: require('@/assets/main/lalaland.png'),
+        img: require('@/assets/main/ginny.jpg'),
         url: 'https://youtu.be/t7w3k3pjZY4'
     },
     {

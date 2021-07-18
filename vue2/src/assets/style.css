@@ -64,11 +64,30 @@ nav li{
 .home {
     font-weight: bold;
 }
+
+/* 스크롤바 설정*/
+.video_list ul::-webkit-scrollbar{
+    width: 6px;
+}
+
+/* 스크롤바 막대 설정*/
+.video_list ul::-webkit-scrollbar-thumb{
+    height: 10%;
+    background-color: #fff;
+    border-radius: 10px;  
+}
+
+/* 스크롤바 뒷 배경 설정*/
+.video_list ul::-webkit-scrollbar-track{
+    background-color: #525252;
+}
+
 .video_list {
     /* margin-top: 20px;
     position: absolute; */
     margin: 3vw 0;
     padding: 0;
+    height: 170px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -84,6 +103,7 @@ nav li{
     margin-inline: 0px;
     white-space:nowrap; 
     overflow-x: auto; 
+    margin-left:30px;
     /* text-align:center */
     /* width: 100%; */
     /* border-bottom: 1px solid; */
@@ -92,6 +112,7 @@ nav li{
     padding: 0px 10px;
     display: inline-block;
     margin-bottom: 15px;
+    margin-left: -27px;
 }
 
 ::-webkit-scrollbar {

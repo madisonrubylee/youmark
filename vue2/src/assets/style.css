@@ -108,11 +108,17 @@ nav li{
     /* width: 100%; */
     /* border-bottom: 1px solid; */
 }
-.video_list li{
+.video_list .first{
     padding: 0px 10px;
     display: inline-block;
     margin-bottom: 15px;
     margin-left: -27px;
+}
+
+.video_list li {
+    padding: 0px 10px;
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
 ::-webkit-scrollbar {

@@ -4,7 +4,8 @@
         <a class="rowTitle">{{videoList.codeDesc}}</a>
       </h2>
       <ul>
-        <li v-for="(item, idx) in videoList.url" v-bind:key="idx" >
+        <li v-for="(item, idx) in videoList.url" v-bind:key="idx" 
+          :class=" idx === 0 ? 'first' : ''">
           <youtube 
             :video-id="item | url" 
             :player-width="300"

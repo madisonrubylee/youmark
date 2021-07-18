@@ -2,7 +2,7 @@
     <div>
         <nav>
             <ul class="menu">
-                <li>Home</li>
+                <li class="home">Home</li>
                 <li>Explore</li>
                 <li>Bookmark</li>
             </ul>

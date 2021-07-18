@@ -24,7 +24,8 @@ const data:Main[] = [
         id: 1,
         code: 'RE',
         codeDesc:'이어보기',
-        url: ['https://youtu.be/4K3SDRNgfD8','https://youtu.be/t7w3k3pjZY4','https://youtu.be/ISTj-1F-kAU','https://youtu.be/jqaR8A9tesk','https://youtu.be/wdp1icyzXkw','https://youtu.be/J0rmycJSPAE']
+        url: ['https://youtu.be/4K3SDRNgfD8','https://youtu.be/t7w3k3pjZY4','https://youtu.be/ISTj-1F-kAU','https://youtu.be/jqaR8A9tesk','https://youtu.be/wdp1icyzXkw','https://youtu.be/J0rmycJSPAE'
+            ,'https://youtu.be/3Ymbcy3wJ78','https://youtu.be/lpoUSREEHuk','https://youtu.be/Ej2m-lZH4PA']
     },
     {
         id: 2,

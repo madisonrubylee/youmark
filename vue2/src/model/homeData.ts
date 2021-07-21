@@ -2,15 +2,15 @@ import { Main, MainBanner } from '../store/main/types'
 
 const banner:MainBanner[] = [
     {
+        img: require('@/assets/main/ginny.jpg'),
+        url: 'https://youtu.be/3dTugvzECp8'
+    },
+    {
         img: require('@/assets/main/strangeThings.jpeg'),
         url: 'https://youtu.be/3dTugvzECp8'
     },
     {
         img: require('@/assets/main/amelie.jpg'),
-        url: 'https://youtu.be/3dTugvzECp8'
-    },
-    {
-        img: require('@/assets/main/ginny.jpg'),
         url: 'https://youtu.be/t7w3k3pjZY4'
     },
     {
@@ -33,6 +33,13 @@ const data:Main[] = [
         codeDesc: '맛있는 요리',
         url: ['https://youtu.be/5rfj9X5JzBs','https://youtu.be/6pqKsA6FQVc']
     },
+    {
+        id: 3,
+        code: 'MS',
+        codeDesc: '님의 음악 취향',
+        url: ['https://youtu.be/lo4KMGiy--Y','https://youtu.be/JcoSaQLSrkY','https://youtu.be/3ggMPdtNrhg']
+
+    }
    
 ]
 

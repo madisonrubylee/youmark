@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <!-- <router-view></router-view> -->
+    <Header></Header>
     <mainPage></mainPage>
     <Footer></Footer>
   </div>
@@ -10,11 +11,12 @@
 import { Component, Vue } from 'vue-property-decorator';
 import { UserMutations } from './store/user/mutations';
 import mainPage from './components/MainPage.vue'
-import Footer from './components/Footer.vue'
+import Footer from './components/common/Footer.vue'
+import Header from './components/common/Header.vue'
 
 @Component({
   components: {
-    mainPage , Footer
+    mainPage , Footer, Header
   },
 })
 export default class App extends Vue {

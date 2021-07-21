@@ -1,12 +1,12 @@
 <template>
     <div>
-        <nav>
+        <!-- <nav>
             <ul class="menu">
                 <li class="home">Home</li>
                 <li>Explore</li>
                 <li>Bookmark</li>
             </ul>
-        </nav>
+        </nav> -->
         <div class="banner">
             <banner 
             :bannerList="mainData.mainBanner"

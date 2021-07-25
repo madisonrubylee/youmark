@@ -18,7 +18,7 @@
             :videoList="item" />
     </div>
 </template>
-er
+
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
